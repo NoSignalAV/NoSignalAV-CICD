@@ -1,35 +1,29 @@
 {
     "name": "nosignalav-cicd",
     "version": "1.0.0",
-    "description": "CI/CD configurations and scripts for NoSignalAV",
+    "description": "CICD setup for No Signal AV",
     "main": "index.js",
-    "scripts": {
-        "deploy": "bash scripts/deploy.sh",
-        "test": "bash scripts/test.sh"
-    },
-    "keywords": [
-        "ci",
-        "cd",
-        "deployment"
-    ],
-    "author": "NoSignalAV",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/NoSignalAV/NoSignalAV-CICD.git"
-    },
-    "bugs": {
-        "url": "https://github.com/NoSignalAV/NoSignalAV-CICD/issues"
-    },
-    "homepage": "https://github.com/NoSignalAV/NoSignalAV-CICD#readme"
-}
-{
     "scripts": {
       "start": "node src/index.js",
       "dev": "nodemon src/index.js",
-      "lint": "eslint src/",
       "test": "jest",
-      "build": "npm run build"
-    }
+      "lint": "eslint src/"
+    },
+    "dependencies": {
+      "express": "^4.18.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.16",
+      "eslint": "^8.19.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/NoSignalAV/NoSignalAV-CICD.git"
+    },
+    "bugs": {
+      "url": "https://github.com/NoSignalAV/NoSignalAV-CICD/issues"
+    },
+    "homepage": "https://github.com/NoSignalAV/NoSignalAV-CICD#readme"
   }
+  
   
